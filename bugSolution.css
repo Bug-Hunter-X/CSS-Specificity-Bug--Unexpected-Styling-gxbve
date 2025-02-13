@@ -1,0 +1,13 @@
+/* bugSolution.css */
+#myElement {
+  color: blue;
+}
+
+.myClass[data-attribute="value"] {
+  font-weight: bold;
+}
+
+.anotherClass {
+  background-color: yellow; /*This will now correctly override the default style because of higher specificity*/
+}
+/*The solution prioritizes the ID selector over the class and attribute selectors. More specifically, the class with the attribute selector is more specific than the simple class selector, which causes the yellow background to correctly override the default style.*/
